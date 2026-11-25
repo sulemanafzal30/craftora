@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Review locally saved demo orders and filter by status.">
+  <meta name="theme-color" content="#24483F">
+  <title>Order history | Craftora</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/tokens.css">
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/pages.css">
+</head>
+<body class="order-history-page" data-page="order-history-page">
+<a class="skip-link" href="#main-content">Skip to main content</a>
+  <div class="announcement-bar"><p>Celebrating Pakistani craftsmanship · Thoughtful objects, made by hand</p><a href="about.html">Discover our story</a></div>
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="../index.html" aria-label="Craftora home"><span class="brand__mark" aria-hidden="true">C</span><span class="brand__word">craftora<span class="brand__dot">.</span><small>MADE WITH HERITAGE</small></span></a>
+      <button class="mobile-nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" data-mobile-nav-toggle><span class="sr-only">Open navigation</span><span aria-hidden="true">☰</span></button>
+      <nav id="primary-navigation" class="primary-navigation" aria-label="Main navigation"><a href="../index.html">Home</a>
+<a href="marketplace.html">Marketplace</a>
+<a href="categories.html">Categories</a>
+<a href="artisan-directory.html">Artisans</a>
+<a href="about.html">About</a>
+<a href="help-centre.html">Help</a></nav>
+      <div class="header-actions"><a href="search-results.html" aria-label="Search products">⌕ <span class="sr-only">Search</span></a><a href="wishlist.html" aria-label="Wishlist">♡ <span class="count-badge" data-wishlist-count>0</span></a><a href="cart.html" aria-label="Shopping cart">Bag <span class="count-badge" data-cart-count>0</span></a></div>
+    </div>
+  </header>
+<main id="main-content" class="container page-container" data-order-history><nav class="breadcrumbs" aria-label="Breadcrumb"><a href="../index.html">Home</a><span>/</span><a href="customer-dashboard.html">Customer dashboard</a><span>/</span><span aria-current="page">Order history</span></nav><header class="page-heading"><p class="eyebrow">Your purchases</p><h1>Order history</h1><p>Review the demo orders created through checkout on this browser.</p></header><div class="history-toolbar"><p><strong data-history-count>0</strong> demo orders</p><div class="history-filters"><label for="order-status-filter">Status<select id="order-status-filter" data-order-status-filter><option value="all">All orders</option><option value="placed">Placed</option><option value="processing">Processing</option><option value="delivered">Delivered</option></select></label><label for="order-date-sort">Sort<select id="order-date-sort" data-order-date-sort><option value="newest">Newest first</option><option value="oldest">Oldest first</option></select></label></div></div><div class="order-history-list" data-order-history-list><div class="empty-inline">No demo orders have been saved yet.</div></div><div class="empty-state" data-history-empty hidden><h2>No orders match this filter</h2><p>Choose another status or return to all orders.</p><button class="button button--secondary" type="button" data-reset-order-filter>Show all orders</button></div><div class="empty-state" data-no-orders hidden><span class="empty-state__icon" aria-hidden="true">▤</span><h2>Your order history is empty</h2><p>When you place a demo order, its reference and details will appear here.</p><a class="button" href="marketplace.html">Explore marketplace</a></div></main>
+<footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand"><a class="brand brand--light" href="../index.html"><span class="brand__mark" aria-hidden="true">C</span><span class="brand__word">craftora<span class="brand__dot">.</span><small>MADE WITH HERITAGE</small></span></a><p>A thoughtful marketplace for handmade work and the people who keep craft traditions moving forward.</p></div>
+      <div><h2 class="footer-heading">Explore</h2><ul><li><a href="marketplace.html">Marketplace</a></li><li><a href="categories.html">Craft categories</a></li><li><a href="artisan-directory.html">Meet artisans</a></li></ul></div>
+      <div><h2 class="footer-heading">Your account</h2><ul><li><a href="customer-dashboard.html">Customer dashboard</a></li><li><a href="order-history.html">Order history</a></li><li><a href="wishlist.html">Wishlist</a></li><li><a href="cart.html">Shopping cart</a></li></ul></div>
+      <div><h2 class="footer-heading">Craftora</h2><ul><li><a href="about.html">Our story</a></li><li><a href="artisan-registration.html">Join as an artisan</a></li><li><a href="help-centre.html">Help centre</a></li></ul></div>
+    </div>
+    <div class="container footer-bottom"><p>© <span data-current-year>2026</span> Craftora. Educational prototype with fictional sample listings.</p><p>Prices shown in Pakistani Rupees (PKR).</p></div>
+  </footer>
+  <div class="toast-region" data-toast-region role="status" aria-live="polite" aria-atomic="true"></div>
+<script src="../js/data.js" defer></script>
+<script src="../js/storage.js" defer></script>
+<script src="../js/utils.js" defer></script>
+<script src="../js/components.js" defer></script>
+<script src="../js/app.js" defer></script>
+</body>
+</html>

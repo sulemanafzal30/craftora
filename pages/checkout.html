@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Enter sample delivery information and create a local demo order.">
+  <meta name="theme-color" content="#24483F">
+  <title>Demo checkout | Craftora</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/tokens.css">
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/pages.css">
+</head>
+<body class="checkout-page" data-page="checkout-page">
+<a class="skip-link" href="#main-content">Skip to main content</a>
+  <div class="announcement-bar"><p>Celebrating Pakistani craftsmanship · Thoughtful objects, made by hand</p><a href="about.html">Discover our story</a></div>
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="../index.html" aria-label="Craftora home"><span class="brand__mark" aria-hidden="true">C</span><span class="brand__word">craftora<span class="brand__dot">.</span><small>MADE WITH HERITAGE</small></span></a>
+      <button class="mobile-nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" data-mobile-nav-toggle><span class="sr-only">Open navigation</span><span aria-hidden="true">☰</span></button>
+      <nav id="primary-navigation" class="primary-navigation" aria-label="Main navigation"><a href="../index.html">Home</a>
+<a href="marketplace.html">Marketplace</a>
+<a href="categories.html">Categories</a>
+<a href="artisan-directory.html">Artisans</a>
+<a href="about.html">About</a>
+<a href="help-centre.html">Help</a></nav>
+      <div class="header-actions"><a href="search-results.html" aria-label="Search products">⌕ <span class="sr-only">Search</span></a><a href="wishlist.html" aria-label="Wishlist">♡ <span class="count-badge" data-wishlist-count>0</span></a><a href="cart.html" aria-label="Shopping cart">Bag <span class="count-badge" data-cart-count>0</span></a></div>
+    </div>
+  </header>
+<main id="main-content" class="container page-container"><nav class="breadcrumbs" aria-label="Breadcrumb"><a href="../index.html">Home</a><span>/</span><a href="cart.html">Cart</a><span>/</span><span aria-current="page">Checkout</span></nav><header class="page-heading"><p class="eyebrow">A few details before we wrap</p><h1>Demo checkout</h1><p>This is a simulated checkout for the university prototype. Do not enter real payment-card details.</p></header><ol class="checkout-progress" aria-label="Checkout progress"><li class="is-complete">Cart</li><li class="is-current" aria-current="step">Delivery details</li><li>Confirmation</li></ol>
+  <form class="checkout-layout" data-checkout-form novalidate><div class="checkout-fields"><section class="form-section"><div class="form-section__heading"><span>01</span><div><h2>Contact information</h2><p>Used only to demonstrate form validation.</p></div></div><div class="form-grid"><label for="checkout-name">Full name<input id="checkout-name" name="name" autocomplete="name" required></label><label for="checkout-email">Email address<input id="checkout-email" name="email" type="email" autocomplete="email" required></label><label for="checkout-phone">Mobile number<input id="checkout-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="03XX XXXXXXX" pattern="^(\+92|0)?3[0-9]{9}$" required></label></div></section>
+  <section class="form-section"><div class="form-section__heading"><span>02</span><div><h2>Delivery address</h2><p>Use sample details only.</p></div></div><div class="form-grid"><label class="form-grid__full" for="checkout-address">Street address<textarea id="checkout-address" name="address" rows="2" autocomplete="street-address" required></textarea></label><label for="checkout-city">City<input id="checkout-city" name="city" autocomplete="address-level2" required></label><label for="checkout-postal">Postal code<input id="checkout-postal" name="postal" inputmode="numeric" autocomplete="postal-code" required></label><label for="checkout-province">Province<select id="checkout-province" name="province" autocomplete="address-level1" required><option value="">Select province</option><option>Punjab</option><option>Sindh</option><option>Khyber Pakhtunkhwa</option><option>Balochistan</option><option>Islamabad Capital Territory</option><option>Gilgit-Baltistan</option><option>Azad Jammu and Kashmir</option></select></label></div></section>
+  <section class="form-section"><div class="form-section__heading"><span>03</span><div><h2>Delivery method</h2><p>Delivery prices follow the demo pricing rules.</p></div></div><label class="choice-card"><input type="radio" name="delivery" value="standard" checked data-delivery-method><span><strong>Standard delivery</strong><small>Rs. 250 · Free on eligible subtotals of Rs. 10,000+</small></span></label><label class="choice-card"><input type="radio" name="delivery" value="express" data-delivery-method><span><strong>Express delivery</strong><small>Rs. 450 · Illustrative service</small></span></label></section>
+  <section class="form-section"><div class="form-section__heading"><span>04</span><div><h2>Demo payment method</h2><p>No payment gateway is connected and no card information is requested.</p></div></div><label class="choice-card"><input type="radio" name="payment" value="cash-on-delivery-demo" checked><span><strong>Cash on delivery (demo label)</strong><small>Selection is recorded as sample order information only.</small></span></label><label class="choice-card"><input type="radio" name="payment" value="bank-transfer-demo"><span><strong>Bank transfer (demo label)</strong><small>No bank details or real transaction are involved.</small></span></label></section><div class="form-error" data-checkout-error role="alert" hidden></div><button class="button button--full button--large" type="submit">Place demo order</button><p class="secure-note">By continuing, you create a local demo order only. No real purchase, payment or delivery is initiated.</p></div>
+  <aside class="order-summary checkout-summary"><h2>Your order</h2><div data-checkout-items><p>Loading sample cart…</p></div><div class="summary-row"><span>Subtotal</span><strong data-checkout-subtotal>Rs. 0</strong></div><div class="summary-row"><span>Discount</span><strong data-checkout-discount>Rs. 0</strong></div><div class="summary-row"><span>Delivery</span><strong data-checkout-delivery>Rs. 0</strong></div><div class="summary-row summary-row--total"><span>Total</span><strong data-checkout-total>Rs. 0</strong></div><p class="summary-footnote">Discount code CRAFT10: 10% off eligible merchandise, capped at Rs. 1,500.</p></aside></form></main>
+<footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand"><a class="brand brand--light" href="../index.html"><span class="brand__mark" aria-hidden="true">C</span><span class="brand__word">craftora<span class="brand__dot">.</span><small>MADE WITH HERITAGE</small></span></a><p>A thoughtful marketplace for handmade work and the people who keep craft traditions moving forward.</p></div>
+      <div><h2 class="footer-heading">Explore</h2><ul><li><a href="marketplace.html">Marketplace</a></li><li><a href="categories.html">Craft categories</a></li><li><a href="artisan-directory.html">Meet artisans</a></li></ul></div>
+      <div><h2 class="footer-heading">Your account</h2><ul><li><a href="customer-dashboard.html">Customer dashboard</a></li><li><a href="order-history.html">Order history</a></li><li><a href="wishlist.html">Wishlist</a></li><li><a href="cart.html">Shopping cart</a></li></ul></div>
+      <div><h2 class="footer-heading">Craftora</h2><ul><li><a href="about.html">Our story</a></li><li><a href="artisan-registration.html">Join as an artisan</a></li><li><a href="help-centre.html">Help centre</a></li></ul></div>
+    </div>
+    <div class="container footer-bottom"><p>© <span data-current-year>2026</span> Craftora. Educational prototype with fictional sample listings.</p><p>Prices shown in Pakistani Rupees (PKR).</p></div>
+  </footer>
+  <div class="toast-region" data-toast-region role="status" aria-live="polite" aria-atomic="true"></div>
+<script src="../js/data.js" defer></script>
+<script src="../js/storage.js" defer></script>
+<script src="../js/utils.js" defer></script>
+<script src="../js/components.js" defer></script>
+<script src="../js/app.js" defer></script>
+</body>
+</html>

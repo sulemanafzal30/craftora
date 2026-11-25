@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Browse handmade products from fictional Pakistani artisan studios.">
+  <meta name="theme-color" content="#24483F">
+  <title>Marketplace | Craftora</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/tokens.css">
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/pages.css">
+</head>
+<body class="marketplace-page" data-page="marketplace-page">
+<a class="skip-link" href="#main-content">Skip to main content</a>
+  <div class="announcement-bar"><p>Celebrating Pakistani craftsmanship · Thoughtful objects, made by hand</p><a href="about.html">Discover our story</a></div>
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="../index.html" aria-label="Craftora home"><span class="brand__mark" aria-hidden="true">C</span><span class="brand__word">craftora<span class="brand__dot">.</span><small>MADE WITH HERITAGE</small></span></a>
+      <button class="mobile-nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" data-mobile-nav-toggle><span class="sr-only">Open navigation</span><span aria-hidden="true">☰</span></button>
+      <nav id="primary-navigation" class="primary-navigation" aria-label="Main navigation"><a href="../index.html">Home</a>
+<a href="marketplace.html">Marketplace</a>
+<a href="categories.html">Categories</a>
+<a href="artisan-directory.html">Artisans</a>
+<a href="about.html">About</a>
+<a href="help-centre.html">Help</a></nav>
+      <div class="header-actions"><a href="search-results.html" aria-label="Search products">⌕ <span class="sr-only">Search</span></a><a href="wishlist.html" aria-label="Wishlist">♡ <span class="count-badge" data-wishlist-count>0</span></a><a href="cart.html" aria-label="Shopping cart">Bag <span class="count-badge" data-cart-count>0</span></a></div>
+    </div>
+  </header>
+<main id="main-content" class="container page-container"><nav class="breadcrumbs" aria-label="Breadcrumb"><a href="../index.html">Home</a><span aria-hidden="true">/</span><span aria-current="page">Marketplace</span></nav>
+  <header class="page-heading"><p class="eyebrow">The Craftora collection</p><h1>Marketplace</h1><p>Explore handmade pieces from independent demo artisan studios across Pakistan.</p></header>
+  <form class="search-bar" role="search" action="search-results.html" method="get"><label class="sr-only" for="market-search">Search the marketplace</label><input id="market-search" name="q" type="search" placeholder="Search textiles, pottery, home décor…"><button class="button" type="submit">Search</button></form>
+  <div class="catalog-layout"><aside class="filter-panel" aria-label="Product filters"><div class="filter-panel__top"><h2>Refine results</h2><button class="text-button" type="reset" form="catalog-filters" data-clear-filters>Clear all</button></div><form id="catalog-filters" data-catalog-filters><fieldset><legend>Craft category</legend><label><input type="checkbox" name="category" value="Handwoven Textiles"> Textiles</label><label><input type="checkbox" name="category" value="Pottery & Ceramics"> Pottery & ceramics</label><label><input type="checkbox" name="category" value="Wooden Handicrafts"> Woodwork</label><label><input type="checkbox" name="category" value="Embroidery & Needlework"> Embroidery</label><label><input type="checkbox" name="category" value="Leather Crafts"> Leather crafts</label><label><input type="checkbox" name="category" value="Traditional Home Décor"> Home décor</label></fieldset><fieldset><legend>Price range (PKR)</legend><label for="min-price">Minimum</label><input id="min-price" type="number" name="minPrice" min="0" placeholder="0"><label for="max-price">Maximum</label><input id="max-price" type="number" name="maxPrice" min="0" placeholder="10,000"></fieldset><fieldset><legend>Customer rating</legend><label><input type="radio" name="rating" value="4"> 4 stars & above</label><label><input type="radio" name="rating" value="3"> 3 stars & above</label></fieldset><button class="button button--full" type="submit">Apply filters</button></form></aside>
+  <section class="catalog-results" aria-label="Marketplace products"><div class="catalog-toolbar"><p><strong data-result-count>6</strong> pieces <span class="muted">· Sample catalogue</span></p><label for="sort-products">Sort by <select id="sort-products" name="sort" data-sort-products><option value="featured">Featured</option><option value="price-low">Price: low to high</option><option value="price-high">Price: high to low</option><option value="rating">Top rated</option><option value="newest">Newest</option></select></label></div><div class="active-filters" data-active-filters aria-live="polite"></div><div class="product-grid" data-product-grid><article class="product-card" data-product-card data-product-id="p001">
+      <a class="product-card__media" href="product-details.html?id=p001" aria-label="View Ajrak Dupatta">
+        <img src="https://images.unsplash.com/photo-1601924994987-69e26d50dc26?auto=format&fit=crop&w=900&q=85" alt="Folded indigo patterned textile" loading="lazy" width="720" height="900">
+        <span class="product-card__badge">Handmade</span>
+      </a>
+      <div class="product-card__body">
+        <p class="eyebrow">Handwoven Textiles</p>
+        <h3><a href="product-details.html?id=p001">Ajrak Dupatta</a></h3>
+        <p class="product-card__maker">By <a href="artisan-profile.html?id=a001">Zainab’s Loom</a></p>
+        <div class="product-card__meta"><strong>Rs. 4,500</strong><span aria-label="Rated 4.9 out of 5">★ 4.9 <span class="muted">(28)</span></span></div>
+        <div class="product-card__actions">
+          <button class="button button--small" type="button" data-add-to-cart="p001">Add to cart</button>
+          <button class="icon-button" type="button" data-toggle-wishlist="p001" aria-label="Save Ajrak Dupatta to wishlist" aria-pressed="false">♡</button>
+        </div>
+      </div>
+    </article>
+<article class="product-card" data-product-card data-product-id="p002">
+      <a class="product-card__media" href="product-details.html?id=p002" aria-label="View Multani Blue Pottery Vase">
+        <img src="https://images.unsplash.com/photo-1578749556568-bc2c40e68b61?auto=format&fit=crop&w=900&q=85" alt="Handmade ceramic vase with blue decoration" loading="lazy" width="720" height="900">
+        <span class="product-card__badge">Handmade</span>
+      </a>
+      <div class="product-card__body">
+        <p class="eyebrow">Pottery &amp; Ceramics</p>
+        <h3><a href="product-details.html?id=p002">Multani Blue Pottery Vase</a></h3>
+        <p class="product-card__maker">By <a href="artisan-profile.html?id=a002">Kashi Studio</a></p>
+        <div class="product-card__meta"><strong>Rs. 3,200</strong><span aria-label="Rated 4.8 out of 5">★ 4.8 <span class="muted">(19)</span></span></div>
+        <div class="product-card__actions">
+          <button class="button button--small" type="button" data-add-to-cart="p002">Add to cart</button>
+          <button class="icon-button" type="button" data-toggle-wishlist="p002" aria-label="Save Multani Blue Pottery Vase to wishlist" aria-pressed="false">♡</button>
+        </div>
+      </div>
+    </article>
+<article class="product-card" data-product-card data-product-id="p003">
+      <a class="product-card__media" href="product-details.html?id=p003" aria-label="View Chinioti Carved Wooden Box">
+        <img src="https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&fit=crop&w=900&q=85" alt="Decorative carved wooden storage box" loading="lazy" width="720" height="900">
+        <span class="product-card__badge">Handmade</span>
+      </a>
+      <div class="product-card__body">
+        <p class="eyebrow">Wooden Handicrafts</p>
+        <h3><a href="product-details.html?id=p003">Chinioti Carved Wooden Box</a></h3>
+        <p class="product-card__maker">By <a href="artisan-profile.html?id=a003">Darakht Works</a></p>
+        <div class="product-card__meta"><strong>Rs. 5,800</strong><span aria-label="Rated 4.9 out of 5">★ 4.9 <span class="muted">(16)</span></span></div>
+        <div class="product-card__actions">
+          <button class="button button--small" type="button" data-add-to-cart="p003">Add to cart</button>
+          <button class="icon-button" type="button" data-toggle-wishlist="p003" aria-label="Save Chinioti Carved Wooden Box to wishlist" aria-pressed="false">♡</button>
+        </div>
+      </div>
+    </article>
+<article class="product-card" data-product-card data-product-id="p004">
+      <a class="product-card__media" href="product-details.html?id=p004" aria-label="View Embroidered Cushion Cover">
+        <img src="https://images.unsplash.com/photo-1584100936595-c0654b55a2e2?auto=format&fit=crop&w=900&q=85" alt="Textured embroidered cushion cover" loading="lazy" width="720" height="900">
+        <span class="product-card__badge">Handmade</span>
+      </a>
+      <div class="product-card__body">
+        <p class="eyebrow">Embroidery &amp; Needlework</p>
+        <h3><a href="product-details.html?id=p004">Embroidered Cushion Cover</a></h3>
+        <p class="product-card__maker">By <a href="artisan-profile.html?id=a004">Gulzar Needlecraft</a></p>
+        <div class="product-card__meta"><strong>Rs. 2,400</strong><span aria-label="Rated 4.7 out of 5">★ 4.7 <span class="muted">(31)</span></span></div>
+        <div class="product-card__actions">
+          <button class="button button--small" type="button" data-add-to-cart="p004">Add to cart</button>
+          <button class="icon-button" type="button" data-toggle-wishlist="p004" aria-label="Save Embroidered Cushion Cover to wishlist" aria-pressed="false">♡</button>
+        </div>
+      </div>
+    </article>
+<article class="product-card" data-product-card data-product-id="p005">
+      <a class="product-card__media" href="product-details.html?id=p005" aria-label="View Traditional Leather Khussa">
+        <img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=900&q=85" alt="Traditional handcrafted leather footwear" loading="lazy" width="720" height="900">
+        <span class="product-card__badge">Handmade</span>
+      </a>
+      <div class="product-card__body">
+        <p class="eyebrow">Leather Crafts</p>
+        <h3><a href="product-details.html?id=p005">Traditional Leather Khussa</a></h3>
+        <p class="product-card__maker">By <a href="artisan-profile.html?id=a005">Qissa Leather House</a></p>
+        <div class="product-card__meta"><strong>Rs. 6,500</strong><span aria-label="Rated 4.8 out of 5">★ 4.8 <span class="muted">(22)</span></span></div>
+        <div class="product-card__actions">
+          <button class="button button--small" type="button" data-add-to-cart="p005">Add to cart</button>
+          <button class="icon-button" type="button" data-toggle-wishlist="p005" aria-label="Save Traditional Leather Khussa to wishlist" aria-pressed="false">♡</button>
+        </div>
+      </div>
+    </article>
+<article class="product-card" data-product-card data-product-id="p006">
+      <a class="product-card__media" href="product-details.html?id=p006" aria-label="View Truck-Art Decorative Tray">
+        <img src="https://images.unsplash.com/photo-1610701596007-11502861dcfa?auto=format&fit=crop&w=900&q=85" alt="Colourful decorative handmade tray" loading="lazy" width="720" height="900">
+        <span class="product-card__badge">Handmade</span>
+      </a>
+      <div class="product-card__body">
+        <p class="eyebrow">Traditional Home Décor</p>
+        <h3><a href="product-details.html?id=p006">Truck-Art Decorative Tray</a></h3>
+        <p class="product-card__maker">By <a href="artisan-profile.html?id=a006">Rang Caravan</a></p>
+        <div class="product-card__meta"><strong>Rs. 1,850</strong><span aria-label="Rated 4.6 out of 5">★ 4.6 <span class="muted">(14)</span></span></div>
+        <div class="product-card__actions">
+          <button class="button button--small" type="button" data-add-to-cart="p006">Add to cart</button>
+          <button class="icon-button" type="button" data-toggle-wishlist="p006" aria-label="Save Truck-Art Decorative Tray to wishlist" aria-pressed="false">♡</button>
+        </div>
+      </div>
+    </article></div><div class="empty-state" data-empty-state hidden><span class="empty-state__icon" aria-hidden="true">⌕</span><h2>No pieces match these filters</h2><p>Try another category or clear your filters to see the full collection.</p><button class="button button--secondary" type="button" data-clear-filters>Clear filters</button></div><div class="load-more-wrap"><button class="button button--secondary" type="button" data-load-more>Load more pieces</button></div></section></div>
+  <p class="demo-note">Craftora is a frontend demonstration. Product details, prices, ratings and artisan profiles are fictional sample data.</p></main>
+<footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand"><a class="brand brand--light" href="../index.html"><span class="brand__mark" aria-hidden="true">C</span><span class="brand__word">craftora<span class="brand__dot">.</span><small>MADE WITH HERITAGE</small></span></a><p>A thoughtful marketplace for handmade work and the people who keep craft traditions moving forward.</p></div>
+      <div><h2 class="footer-heading">Explore</h2><ul><li><a href="marketplace.html">Marketplace</a></li><li><a href="categories.html">Craft categories</a></li><li><a href="artisan-directory.html">Meet artisans</a></li></ul></div>
+      <div><h2 class="footer-heading">Your account</h2><ul><li><a href="customer-dashboard.html">Customer dashboard</a></li><li><a href="order-history.html">Order history</a></li><li><a href="wishlist.html">Wishlist</a></li><li><a href="cart.html">Shopping cart</a></li></ul></div>
+      <div><h2 class="footer-heading">Craftora</h2><ul><li><a href="about.html">Our story</a></li><li><a href="artisan-registration.html">Join as an artisan</a></li><li><a href="help-centre.html">Help centre</a></li></ul></div>
+    </div>
+    <div class="container footer-bottom"><p>© <span data-current-year>2026</span> Craftora. Educational prototype with fictional sample listings.</p><p>Prices shown in Pakistani Rupees (PKR).</p></div>
+  </footer>
+  <div class="toast-region" data-toast-region role="status" aria-live="polite" aria-atomic="true"></div>
+<script src="../js/data.js" defer></script>
+<script src="../js/storage.js" defer></script>
+<script src="../js/utils.js" defer></script>
+<script src="../js/components.js" defer></script>
+<script src="../js/app.js" defer></script>
+</body>
+</html>

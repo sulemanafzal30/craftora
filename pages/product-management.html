@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Add, edit and remove product listings in the local demo catalogue.">
+  <meta name="theme-color" content="#24483F">
+  <title>Product management | Craftora</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/tokens.css">
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/pages.css">
+</head>
+<body class="product-management-page" data-page="product-management-page">
+<a class="skip-link" href="#main-content">Skip to main content</a>
+  <div class="announcement-bar"><p>Celebrating Pakistani craftsmanship · Thoughtful objects, made by hand</p><a href="about.html">Discover our story</a></div>
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="../index.html" aria-label="Craftora home"><span class="brand__mark" aria-hidden="true">C</span><span class="brand__word">craftora<span class="brand__dot">.</span><small>MADE WITH HERITAGE</small></span></a>
+      <button class="mobile-nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" data-mobile-nav-toggle><span class="sr-only">Open navigation</span><span aria-hidden="true">☰</span></button>
+      <nav id="primary-navigation" class="primary-navigation" aria-label="Main navigation"><a href="../index.html">Home</a>
+<a href="marketplace.html">Marketplace</a>
+<a href="categories.html">Categories</a>
+<a href="artisan-directory.html">Artisans</a>
+<a href="about.html">About</a>
+<a href="help-centre.html">Help</a></nav>
+      <div class="header-actions"><a href="search-results.html" aria-label="Search products">⌕ <span class="sr-only">Search</span></a><a href="wishlist.html" aria-label="Wishlist">♡ <span class="count-badge" data-wishlist-count>0</span></a><a href="cart.html" aria-label="Shopping cart">Bag <span class="count-badge" data-cart-count>0</span></a></div>
+    </div>
+  </header>
+<main id="main-content" class="container page-container" data-product-management><nav class="breadcrumbs" aria-label="Breadcrumb"><a href="../index.html">Home</a><span>/</span><a href="artisan-dashboard.html">Artisan dashboard</a><span>/</span><span aria-current="page">Product management</span></nav><header class="dashboard-heading"><div><p class="eyebrow">Your sample catalogue</p><h1>Product management</h1><p>Create, update and remove demonstration product listings. Changes are saved in this browser.</p></div><button class="button" type="button" data-open-product-form>Add a product <span aria-hidden="true">＋</span></button></header><section class="stats-grid stats-grid--three"><article class="stat-card"><span>Total listings</span><strong data-management-count>0</strong></article><article class="stat-card"><span>Units in stock</span><strong data-management-stock>0</strong></article><article class="stat-card"><span>Inventory value</span><strong data-management-value>Rs. 0</strong></article></section><section class="dashboard-panel"><div class="panel-heading"><h2>All products</h2><label for="management-filter">Show <select id="management-filter" data-management-filter><option value="all">All listings</option><option value="in-stock">In stock</option><option value="low-stock">Low stock</option><option value="out-of-stock">Out of stock</option></select></label></div><div class="table-wrap"><table class="data-table"><caption class="sr-only">Manage products in the demo catalogue</caption><thead><tr><th scope="col">Product</th><th scope="col">Category</th><th scope="col">Price</th><th scope="col">Stock</th><th scope="col">Status</th><th scope="col">Actions</th></tr></thead><tbody data-management-table><tr><td>Ajrak Dupatta</td><td>Textiles</td><td>Rs. 4,500</td><td>12</td><td>In stock</td><td><button type="button" class="text-button" data-edit-product="p001">Edit</button></td></tr></tbody></table></div><div class="empty-state" data-management-empty hidden><h2>No products in this view</h2><p>Add a listing or change the inventory filter.</p></div></section>
+  <dialog class="product-editor" data-product-dialog aria-labelledby="product-dialog-title"><form method="dialog" class="dialog-close-form"><button class="icon-button" type="submit" value="cancel" aria-label="Close product form">×</button></form><form data-product-editor-form novalidate><p class="eyebrow">PRODUCT LISTING · DEMO</p><h2 id="product-dialog-title" data-product-dialog-title>Add a product</h2><input type="hidden" name="id" data-editor-id><label for="edit-product-name">Product name *<input id="edit-product-name" name="name" required maxlength="100"></label><label for="edit-product-category">Category *<select id="edit-product-category" name="category" required><option value="">Select category</option><option>Handwoven Textiles</option><option>Pottery & Ceramics</option><option>Wooden Handicrafts</option><option>Handmade Jewellery</option><option>Embroidery & Needlework</option><option>Traditional Home Décor</option><option>Leather Crafts</option><option>Cultural Accessories</option><option>Handmade Gifts</option></select></label><div class="form-grid"><label for="edit-product-price">Price (PKR) *<input id="edit-product-price" name="price" type="number" min="1" step="1" required></label><label for="edit-product-stock">Stock units *<input id="edit-product-stock" name="stock" type="number" min="0" step="1" required></label></div><label for="edit-product-description">Description *<textarea id="edit-product-description" name="description" rows="4" required maxlength="500"></textarea></label><label for="edit-product-image">Image URL (optional)<input id="edit-product-image" name="image" type="url" placeholder="https://example.com/image.jpg"></label><div class="dialog-actions"><button class="button button--secondary" type="button" data-cancel-product>Cancel</button><button class="button" type="submit">Save product</button></div><p class="form-message" data-editor-message aria-live="polite"></p></form></dialog>
+  <dialog class="confirm-dialog" data-delete-dialog aria-labelledby="delete-dialog-title"><h2 id="delete-dialog-title">Delete this listing?</h2><p>This removes the sample product from this browser’s demo catalogue.</p><div class="dialog-actions"><button class="button button--secondary" type="button" data-cancel-delete>Cancel</button><button class="button button--danger" type="button" data-confirm-delete>Delete product</button></div></dialog><p class="demo-note">Product updates are stored in localStorage. They do not publish to a real marketplace.</p></main>
+<footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand"><a class="brand brand--light" href="../index.html"><span class="brand__mark" aria-hidden="true">C</span><span class="brand__word">craftora<span class="brand__dot">.</span><small>MADE WITH HERITAGE</small></span></a><p>A thoughtful marketplace for handmade work and the people who keep craft traditions moving forward.</p></div>
+      <div><h2 class="footer-heading">Explore</h2><ul><li><a href="marketplace.html">Marketplace</a></li><li><a href="categories.html">Craft categories</a></li><li><a href="artisan-directory.html">Meet artisans</a></li></ul></div>
+      <div><h2 class="footer-heading">Your account</h2><ul><li><a href="customer-dashboard.html">Customer dashboard</a></li><li><a href="order-history.html">Order history</a></li><li><a href="wishlist.html">Wishlist</a></li><li><a href="cart.html">Shopping cart</a></li></ul></div>
+      <div><h2 class="footer-heading">Craftora</h2><ul><li><a href="about.html">Our story</a></li><li><a href="artisan-registration.html">Join as an artisan</a></li><li><a href="help-centre.html">Help centre</a></li></ul></div>
+    </div>
+    <div class="container footer-bottom"><p>© <span data-current-year>2026</span> Craftora. Educational prototype with fictional sample listings.</p><p>Prices shown in Pakistani Rupees (PKR).</p></div>
+  </footer>
+  <div class="toast-region" data-toast-region role="status" aria-live="polite" aria-atomic="true"></div>
+<script src="../js/data.js" defer></script>
+<script src="../js/storage.js" defer></script>
+<script src="../js/utils.js" defer></script>
+<script src="../js/components.js" defer></script>
+<script src="../js/app.js" defer></script>
+</body>
+</html>

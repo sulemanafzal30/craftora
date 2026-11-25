@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Review selected products and estimate the demo order total.">
+  <meta name="theme-color" content="#24483F">
+  <title>Shopping cart | Craftora</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/tokens.css">
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/pages.css">
+</head>
+<body class="cart-page" data-page="cart-page">
+<a class="skip-link" href="#main-content">Skip to main content</a>
+  <div class="announcement-bar"><p>Celebrating Pakistani craftsmanship · Thoughtful objects, made by hand</p><a href="about.html">Discover our story</a></div>
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="../index.html" aria-label="Craftora home"><span class="brand__mark" aria-hidden="true">C</span><span class="brand__word">craftora<span class="brand__dot">.</span><small>MADE WITH HERITAGE</small></span></a>
+      <button class="mobile-nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" data-mobile-nav-toggle><span class="sr-only">Open navigation</span><span aria-hidden="true">☰</span></button>
+      <nav id="primary-navigation" class="primary-navigation" aria-label="Main navigation"><a href="../index.html">Home</a>
+<a href="marketplace.html">Marketplace</a>
+<a href="categories.html">Categories</a>
+<a href="artisan-directory.html">Artisans</a>
+<a href="about.html">About</a>
+<a href="help-centre.html">Help</a></nav>
+      <div class="header-actions"><a href="search-results.html" aria-label="Search products">⌕ <span class="sr-only">Search</span></a><a href="wishlist.html" aria-label="Wishlist">♡ <span class="count-badge" data-wishlist-count>0</span></a><a href="cart.html" aria-label="Shopping cart">Bag <span class="count-badge" data-cart-count>0</span></a></div>
+    </div>
+  </header>
+<main id="main-content" class="container page-container"><nav class="breadcrumbs" aria-label="Breadcrumb"><a href="../index.html">Home</a><span>/</span><span aria-current="page">Shopping cart</span></nav><header class="page-heading"><p class="eyebrow">Your selected pieces</p><h1>Shopping cart</h1><p>Review your items and quantities before moving to the demo checkout.</p></header>
+  <div class="cart-layout"><section class="cart-items" aria-label="Cart items"><div class="cart-items__header"><h2>Your bag <span data-cart-item-count>(0 items)</span></h2><a href="marketplace.html">Continue shopping</a></div><div data-cart-items><article class="cart-item" data-cart-item data-product-id="p001"><img src="https://images.unsplash.com/photo-1601924994987-69e26d50dc26?auto=format&fit=crop&w=260&q=75" alt="Ajrak Dupatta" width="180" height="220"><div class="cart-item__details"><h3><a href="product-details.html?id=p001">Ajrak Dupatta</a></h3><p>Zainab’s Loom · Matiari, Sindh</p><strong>Rs. 4,500</strong><label for="cart-qty-p001">Quantity</label><input id="cart-qty-p001" type="number" min="1" max="10" value="1" data-cart-quantity="p001"></div><button class="text-button text-button--danger" type="button" data-remove-cart="p001">Remove</button></article></div><div class="empty-state" data-cart-empty hidden><span class="empty-state__icon" aria-hidden="true">♧</span><h2>Your cart is waiting for its first piece</h2><p>Explore handmade objects from our sample collection.</p><a class="button" href="marketplace.html">Explore marketplace</a></div></section>
+  <aside class="order-summary"><h2>Order summary</h2><div class="summary-row"><span>Merchandise subtotal</span><strong data-cart-subtotal>Rs. 4,500</strong></div><div class="summary-row"><span>Delivery estimate</span><strong data-cart-delivery>Rs. 250</strong></div><div class="discount-form"><label for="discount-code">Demo discount code</label><div class="input-group"><input id="discount-code" name="discount" type="text" placeholder="Enter code" autocomplete="off"><button class="button button--secondary" type="button" data-apply-discount>Apply</button></div><p class="form-message" data-discount-message aria-live="polite">Use CRAFT10 for 10% off eligible merchandise (maximum Rs. 1,500).</p></div><div class="summary-row summary-row--total"><span>Estimated total</span><strong data-cart-total>Rs. 4,750</strong></div><p class="summary-footnote">Standard delivery is Rs. 250, or free on merchandise subtotals of Rs. 10,000+. Express delivery is Rs. 450.</p><a class="button button--full" href="checkout.html" data-checkout-link>Proceed to demo checkout</a><p class="secure-note">Frontend simulation only · No payment is collected.</p></aside></div></main>
+<footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand"><a class="brand brand--light" href="../index.html"><span class="brand__mark" aria-hidden="true">C</span><span class="brand__word">craftora<span class="brand__dot">.</span><small>MADE WITH HERITAGE</small></span></a><p>A thoughtful marketplace for handmade work and the people who keep craft traditions moving forward.</p></div>
+      <div><h2 class="footer-heading">Explore</h2><ul><li><a href="marketplace.html">Marketplace</a></li><li><a href="categories.html">Craft categories</a></li><li><a href="artisan-directory.html">Meet artisans</a></li></ul></div>
+      <div><h2 class="footer-heading">Your account</h2><ul><li><a href="customer-dashboard.html">Customer dashboard</a></li><li><a href="order-history.html">Order history</a></li><li><a href="wishlist.html">Wishlist</a></li><li><a href="cart.html">Shopping cart</a></li></ul></div>
+      <div><h2 class="footer-heading">Craftora</h2><ul><li><a href="about.html">Our story</a></li><li><a href="artisan-registration.html">Join as an artisan</a></li><li><a href="help-centre.html">Help centre</a></li></ul></div>
+    </div>
+    <div class="container footer-bottom"><p>© <span data-current-year>2026</span> Craftora. Educational prototype with fictional sample listings.</p><p>Prices shown in Pakistani Rupees (PKR).</p></div>
+  </footer>
+  <div class="toast-region" data-toast-region role="status" aria-live="polite" aria-atomic="true"></div>
+<script src="../js/data.js" defer></script>
+<script src="../js/storage.js" defer></script>
+<script src="../js/utils.js" defer></script>
+<script src="../js/components.js" defer></script>
+<script src="../js/app.js" defer></script>
+</body>
+</html>
